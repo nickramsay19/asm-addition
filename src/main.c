@@ -3,10 +3,9 @@
 int procedure(int x, int y, int z);
 
 int main() {
+    int x = 1, y = 10, z = 100, r;
     
-    int x, y, z, r;
-    
-    scanf("%d%d%d", &x, &y, &z);
+    //scanf("%d%d%d", &x, &y, &z);
 
     r = procedure(x,y,z);
     
