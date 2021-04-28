@@ -1,14 +1,21 @@
 #include <stdio.h>
 
 int procedure(int x, int y, int z);
+int procedure2(char c);
 
 int main() {
-    int x = 1, y = 10, z = 100, r;
-    
+    int x = 1, y = 10, z = 100, r1;
+
     //scanf("%d%d%d", &x, &y, &z);
 
-    r = procedure(x,y,z);
+    r1 = procedure(x,y,z);
     
-    printf("The result is %d\n", r);
+    printf("The result is %d\n", r1);
+
+    char c = '2', r2;
+    r2 = procedure2(c);
+    printf("The second result is %d\n", r2);
+    
+
     return 0;
 }
