@@ -1,23 +1,15 @@
 #include <stdio.h>
 
-// declare function defined in asm
-int procedure(char c1, char c2);
+int procedure(int x, int y, int z);
 
 int main() {
+    int x = 1, y = 10, z = 100, r1;
 
-    // declare input charactersand result
-    char c1, c2, r;
+    //scanf("%d%d%d", &x, &y, &z);
 
-    // get the input character from stdin
-    printf("Please enter two single digit numbers separated with a return.\n");
-    scanf("%c\n%c", &c1, &c2);
-
-    // run the procedure and place value in r
-    r = procedure(c1, c2);
-
-    // print the result
-    printf("The result is %d\n", r);
+    r1 = procedure(x,y,z);
     
-    // return success code 0
+    printf("The result is %d\n", r1);
+
     return 0;
 }
